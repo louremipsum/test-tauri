@@ -4,7 +4,7 @@
 use std::fs;
 
 use tauri::Manager;
-use tauri::{CustomMenuItem, SystemTray, SystemTrayEvent, SystemTrayMenu};
+use tauri::{SystemTrayEvent};
 mod systray;
 use systray::systray;
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
