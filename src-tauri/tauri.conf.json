@@ -16,19 +16,13 @@
       "iconAsTemplate": true
     },
     "allowlist": {
-      "all": false,
+      "all": true,
       "fs":{
         "scope": ["$RESOURCE/*"],
-        "all": true,
-        "copyFile": false,
-        "createDir": false,
-        "exists": false,
-        "readDir": false,
-        "readFile": false,
-        "removeDir": false,
-        "removeFile": false,
-        "renameFile": false,
-        "writeFile": false
+        "all": true
+      },
+      "http": {
+        "request": true
       },
       "dialog": {
         "all": true, 
@@ -50,7 +44,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.gsoctest.dev",
       "targets": "all"
     },
     "security": {
