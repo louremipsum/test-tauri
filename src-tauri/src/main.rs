@@ -65,6 +65,7 @@ fn main() {
             _ => {}
         })
         .invoke_handler(tauri::generate_handler![notif_count,download])
+        .plugin(tauri_plugin_upload::init())
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
